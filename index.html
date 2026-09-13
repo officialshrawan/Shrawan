@@ -225,20 +225,37 @@ body, html {
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: shrawan.kc1999@gmail.com<br>
       </div>
       <p>Feel free to contact us<i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+      
+<form action="https://formspree.io/f/mjyvqkzz" method="POST">
+  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+    <div class="w3-half">
+      <input class="w3-input w3-border"
+             type="text"
+             placeholder="Name"
+             required
+             name="name">
+    </div>
+
+    <div class="w3-half">
+      <input class="w3-input w3-border"
+             type="email"
+             placeholder="Email"
+             required
+             name="email">
+    </div>
+  </div>
+
+  <textarea class="w3-input w3-border"
+            placeholder="Message"
+            required
+            name="message"
+            rows="4"></textarea>
+
+  <button class="w3-button w3-black w3-right w3-section"
+          type="submit">
+    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+  </button>
+</form>
     </div>
   </div>
 </div>
